@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="laravel_wwrp@dpg-ckf5qsmafg7c73fvd0mg-a.frankfurt-postgres.render.com" uuid="c43501b5-1f40-4cc4-ae13-e63f7faaf72f">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://dpg-ckf5qsmafg7c73fvd0mg-a.frankfurt-postgres.render.com:5432/laravel_wwrp</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>

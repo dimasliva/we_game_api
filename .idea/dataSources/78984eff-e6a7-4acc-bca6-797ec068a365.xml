@@ -705,8 +705,7 @@ sql8651326|schema||sql8651326||UPDATE|G</Grants>
     </column>
     <column id="215" parent="203" name="type">
       <Position>7</Position>
-      <DataType>smallint(6)|0s</DataType>
-      <DefaultExpression>1</DefaultExpression>
+      <DataType>varchar(20)|0s</DataType>
     </column>
     <column id="216" parent="203" name="product">
       <Position>8</Position>

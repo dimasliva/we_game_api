@@ -1,10 +1,23 @@
 const Router = require('express')
 const router = new Router()
 const userController = require('../controller/user.controller')
+const taskController = require('../controller/task.controller')
 
 router.get('/users', userController.getUsers);
 router.get('/users/:id', userController.getUser);
 router.put('/users/:id', userController.updateUser);
 router.post('/users/', userController.addUser);
 router.delete('/users/', userController.deleteUser);
+
+router.get('/items', userController.getUsers);
+router.get('/items/:id', userController.getUser);
+router.put('/items/:id', userController.updateUser);
+router.post('/items/', userController.addUser);
+router.delete('/items/', userController.deleteUser);
+
+router.get('/tasks', taskController.getTask);
+router.get('/tasks/:id', taskController.getTask);
+router.put('/tasks/:id', taskController.updateTask);
+router.post('/tasks/', taskController.addTask);
+router.delete('/tasks/', taskController.deleteTask);
 module.exports = router

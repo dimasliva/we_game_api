@@ -26,7 +26,7 @@ sql8651326|schema||sql8651326||UPDATE|G</Grants>
     </schema>
     <schema id="3" parent="1" name="sql8651326">
       <Current>1</Current>
-      <Collation>latin1_swedish_ci</Collation>
+      <Collation>utf8mb4_unicode_ci</Collation>
     </schema>
     <collation id="4" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
@@ -664,15 +664,15 @@ sql8651326|schema||sql8651326||UPDATE|G</Grants>
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="204" parent="202" name="username">
       <Position>2</Position>
-      <DataType>varchar(20)|0s</DataType>
+      <DataType>varchar(30)|0s</DataType>
     </column>
     <column id="205" parent="202" name="money">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
     </column>
     <key id="206" parent="202" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>

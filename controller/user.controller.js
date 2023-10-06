@@ -16,14 +16,14 @@ class UserController {
         })
     }
     async addUser(req, res) {
-        const {username, password} = req.body
-        await db.query(`INSERT INTO users(username, password) values (${username}, ${password})`, (err, result) => {
+        const {id, username} = req.body
+        await db.query(`INSERT INTO users(id, username) values (${id}, ${username})`, (err, result) => {
             res.json(result)
         })
     }
     async updateUser(req, res) {
-        const {id, username, password} = req.body
-        await db.query(`UPDATE users set username = ${username}, password = ${password}) where id = ${id}`, (err, result) => {
+        const {id, username} = req.body
+        await db.query(`UPDATE users set username = ${username}) where id = ${id}`, (err, result) => {
             res.json(result)
         })
     }

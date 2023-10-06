@@ -670,15 +670,11 @@ sql8651326|schema||sql8651326||UPDATE|G</Grants>
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
     </column>
-    <column id="205" parent="202" name="password">
+    <column id="205" parent="202" name="money">
       <Position>3</Position>
-      <DataType>varchar(20)|0s</DataType>
-    </column>
-    <column id="206" parent="202" name="money">
-      <Position>4</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <key id="207" parent="202" name="PRIMARY">
+    <key id="206" parent="202" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

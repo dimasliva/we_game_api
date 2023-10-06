@@ -5,4 +5,4 @@ const app = express()
 
 app.use(express.json())
 app.use('/api', userRouter);
-app.listen(PORT, () => console.log('start serve'))
+app.listen(PORT, () => console.log('http://localhost:8080/'))

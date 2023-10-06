@@ -17,7 +17,9 @@ class UserController {
     }
     async addUser(req, res) {
         const {id, name} = req.body
-        await db.query(`INSERT INTO users(id, username, name) values (${id}, '${name}')`, (err, result) => {
+        await db.query(`INSERT INTO users(id, name) values (${id}, '${name}')`, (err, result) => {
+            console.log(`INSERT INTO users(id, name) values (${id}, '${name}')`)
+            console.log(result)
             res.json(result)
         })
     }

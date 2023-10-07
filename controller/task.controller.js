@@ -17,14 +17,15 @@ class TaskController {
     }
     async addTask(req, res) {
         const {name, first_name, phone, email, price, type, product, comment} = req.body
-        await db.query(`INSERT INTO tasks(name, first_name, phone, email, price, type, product, comment) values ('${name}', ${first_name}, ${phone}, ${email}, ${price}, ${type}, ${product}, ${comment})`, (err, result) => {
+        console.log(req.body)
+        await db.query(`INSERT INTO tasks(name, first_name, phone, email, price, type, product, comment) values ('${name}', '${first_name}', ${phone}, '${email}', ${price}, '${type}', '${product}', '${comment}')`, (err, result) => {
             console.log(result)
             res.json(result)
         })
     }
     async updateTask(req, res) {
-        const {id, name, first_name, phone, email, price, type, product, comment} = req.body
-        await db.query(`UPDATE tasks set name = '${name}', first_name = '${first_name}', phone = ${phone}, email = '${email}', price = ${price}, type = ${type}, product = '${product}', comment = '${comment}') where id = ${id}`, (err, result) => {
+        const {id, name, first_name, phone, email, price, type, product, comment, completed} = req.body
+        await db.query(`UPDATE tasks set name = '${name}', first_name = '${first_name}', phone = ${phone}, email = '${email}', price = ${price}, type = ${type}, product = '${product}', comment = '${comment}', completed = ${completed} where id = ${id}`, (err, result) => {
             res.json(result)
         })
     }

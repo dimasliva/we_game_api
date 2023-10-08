@@ -5,15 +5,15 @@ const taskController = require('../controller/task.controller')
 
 router.get('/users', userController.getUsers);
 router.get('/users/:id', userController.getUser);
-router.put('/users/:id', userController.updateUser);
+router.put('/users/', userController.updateUser);
 router.post('/users/', userController.addUser);
-router.delete('/users/', userController.deleteUser);
+router.delete('/users/:id', userController.deleteUser);
 
-router.get('/items', userController.getUsers);
+router.get('/items/', userController.getUsers);
 router.get('/items/:id', userController.getUser);
-router.put('/items/:id', userController.updateUser);
+router.put('/items/', userController.updateUser);
 router.post('/items/', userController.addUser);
-router.delete('/items/', userController.deleteUser);
+router.delete('/items/:id', userController.deleteUser);
 
 router.get('/tasks', taskController.getTasks);
 router.get('/tasks/:id', taskController.getTask);

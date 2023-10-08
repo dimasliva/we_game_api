@@ -695,8 +695,7 @@ sql8651326|schema||sql8651326||UPDATE|G</Grants>
     </column>
     <column id="212" parent="203" name="phone">
       <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
-      <DefaultExpression>0</DefaultExpression>
+      <DataType>varchar(11)|0s</DataType>
     </column>
     <column id="213" parent="203" name="email">
       <Position>5</Position>
@@ -758,24 +757,85 @@ sql8651326|schema||sql8651326||UPDATE|G</Grants>
       <DataType>int(11)|0s</DataType>
       <DefaultExpression>0</DefaultExpression>
     </column>
-    <key id="225" parent="204" name="PRIMARY">
+    <column id="225" parent="204" name="weight">
+      <Position>4</Position>
+      <DataType>smallint(5) unsigned|0s</DataType>
+      <DefaultExpression>18</DefaultExpression>
+    </column>
+    <column id="226" parent="204" name="age">
+      <Position>5</Position>
+      <DataType>tinyint(4)|0s</DataType>
+      <DefaultExpression>18</DefaultExpression>
+    </column>
+    <column id="227" parent="204" name="energy">
+      <Position>6</Position>
+      <DataType>smallint(5) unsigned|0s</DataType>
+      <DefaultExpression>100</DefaultExpression>
+    </column>
+    <column id="228" parent="204" name="health">
+      <Position>7</Position>
+      <DataType>tinyint(3) unsigned|0s</DataType>
+      <DefaultExpression>100</DefaultExpression>
+    </column>
+    <column id="229" parent="204" name="hungry">
+      <Position>8</Position>
+      <DataType>tinyint(3) unsigned|0s</DataType>
+      <DefaultExpression>100</DefaultExpression>
+    </column>
+    <column id="230" parent="204" name="power">
+      <Position>9</Position>
+      <DataType>tinyint(3) unsigned|0s</DataType>
+      <DefaultExpression>100</DefaultExpression>
+    </column>
+    <column id="231" parent="204" name="intellect">
+      <Position>10</Position>
+      <DataType>tinyint(3) unsigned|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="232" parent="204" name="lucky">
+      <Position>11</Position>
+      <DataType>tinyint(3) unsigned|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="233" parent="204" name="dirty">
+      <Position>12</Position>
+      <DataType>tinyint(3) unsigned|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="234" parent="204" name="drivecategory">
+      <Position>13</Position>
+      <DataType>varchar(12)|0s</DataType>
+      <DefaultExpression>&apos;отсутствуют&apos;</DefaultExpression>
+    </column>
+    <column id="235" parent="204" name="profession">
+      <Position>14</Position>
+      <DataType>varchar(30)|0s</DataType>
+      <DefaultExpression>&apos;Безработный&apos;</DefaultExpression>
+    </column>
+    <column id="236" parent="204" name="created_at">
+      <Position>15</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <key id="237" parent="204" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="226" parent="205" name="user_id">
+    <column id="238" parent="205" name="user_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
     </column>
-    <column id="227" parent="205" name="item_id">
+    <column id="239" parent="205" name="item_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
     </column>
-    <key id="228" parent="205" name="PRIMARY">
+    <key id="240" parent="205" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>user_id
 item_id</ColNames>

@@ -667,10 +667,12 @@ sql8651326|schema||sql8651326||UPDATE|G</Grants>
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="207" parent="202" name="name">
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
     <key id="208" parent="202" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>

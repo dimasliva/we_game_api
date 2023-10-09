@@ -23,8 +23,8 @@ class ItemController {
         if(!errors.isEmpty()) {
             return res.status(400).json({errors: errors.array()})
         }
-        const {name} = req.body
-        const sql = `INSERT INTO items(name) values ('${name}')`
+        const {name, description} = req.body
+        const sql = `INSERT INTO items(name, description, category) values ('${name}', '${description}', '${category}')`
 
         await db.query(sql, (err, result) => {
             console.log(sql)
@@ -36,10 +36,9 @@ class ItemController {
         if(!errors.isEmpty()) {
             return res.status(400).json({errors: errors.array()})
         }
-        const {id, name} = req.body
-        const sql = `UPDATE items set name = '${name}' where id=${id}`
+        const {id, name, description, category} = req.body
+        const sql = `UPDATE items set name = '${name}', description='${description}', category='${category}' where id=${id}`
         await db.query(sql, (err, result) => {
-            console.log('sql', sql)
             console.log('result', result)
             res.json(result)
         })

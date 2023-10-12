@@ -8,13 +8,6 @@
       <jdbc-url>jdbc:postgresql://dpg-ckf5qsmafg7c73fvd0mg-a.frankfurt-postgres.render.com:5432/laravel_wwrp</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="sql8651326@sql8.freesqldatabase.com" uuid="78984eff-e6a7-4acc-bca6-797ec068a365">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://sql8.freesqldatabase.com:3306/sql8651326</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
     <data-source source="LOCAL" name="laravel@localhost" uuid="99eb7b0c-a3ab-4801-9e08-a73a6721301b">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>

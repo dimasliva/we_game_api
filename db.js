@@ -1,10 +1,10 @@
 const mysql = require('mysql')
 const conn = mysql.createConnection({
-    host: "dpg-ckf5qsmafg7c73fvd0mg-a.frankfurt-postgres.render.com",
-    user: "laravel_wwrp_user",
-    password: "i91QQQpISJ8qnshaUUp0C33xXapQS7fn",
-    port: "5432",
-    database: "laravel_wwrp"
+    host: "sql11.freesqldatabase.com",
+    user: "sql11652852",
+    password: "9Pyhh76xZS",
+    port: "3306",
+    database: "sql11652852"
 })
 
 module.exports = conn

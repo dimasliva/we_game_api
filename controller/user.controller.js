@@ -19,9 +19,14 @@ class UserController {
         })
     }
     async addUser(req, res) {
+        const errors = validationResult(req)
+        if(!errors.isEmpty()) {
+            return res.status(400).json({errors: errors.array()})
+        }
         const {id, name} = req.body
-        await db.query(`INSERT INTO users(id, name) values (${id}, '${name}')`, (err, result) => {
-            console.log(result)
+        const sql = `INSERT INTO users(id, name) values (${id}, '${name}')`
+        await db.query(sql, (err, result) => {
+            console.log(sql)
             res.json(result)
         })
     }

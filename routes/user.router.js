@@ -25,7 +25,10 @@ router.put('/users/', [
     body('created_at').trim().notEmpty()
     ],
     userController.updateUser);
-router.post('/users/', userController.addUser);
+router.post('/users/', [
+    body('id').trim().notEmpty(),
+    body('name').trim().notEmpty()
+], userController.addUser);
 router.delete('/users/:id', userController.deleteUser);
 
 router.get('/tasks', taskController.getTasks);

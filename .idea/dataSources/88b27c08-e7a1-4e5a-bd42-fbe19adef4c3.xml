@@ -659,9 +659,15 @@ sql11652852|schema||sql11652852||UPDATE|G</Grants>
       <Charset>utf8mb4</Charset>
     </collation>
     <user id="201" parent="1" name="sql11652852"/>
-    <table id="202" parent="3" name="items"/>
-    <table id="203" parent="3" name="tasks"/>
-    <table id="204" parent="3" name="users"/>
+    <table id="202" parent="3" name="items">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="203" parent="3" name="tasks">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="204" parent="3" name="users">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
     <table id="205" parent="3" name="users_items"/>
     <column id="206" parent="202" name="id">
       <Position>1</Position>

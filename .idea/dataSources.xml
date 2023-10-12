@@ -22,5 +22,12 @@
       <jdbc-url>jdbc:mysql://sql11.freesqldatabase.com:3306/sql11652852</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="ci31289_wegame@vh424.timeweb.ru" uuid="786fa077-684b-4b44-9372-8bfe9ae7b2a8">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://vh424.timeweb.ru:3306/ci31289_wegame</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

@@ -1,10 +1,10 @@
 const mysql = require('mysql')
 const conn = mysql.createConnection({
     host: "vh424.timeweb.ru",
-    user: "ci31289",
-    password: "fRb7rZxv",
+    user: "cz21951_wegame",
+    password: "6wHzYhWn",
     port: "3306",
-    database: "ci31289_wegame"
+    database: "cz21951_wegame"
 })
 // host vh424.timeweb.ru
 // login ci31289

@@ -44,11 +44,19 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
-    <data-source name="ci31289_wegame@vh424.timeweb.ru" uuid="786fa077-684b-4b44-9372-8bfe9ae7b2a8">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+    <data-source name="cz21951_wegame@vh424.timeweb.ru" uuid="3bd8ecc8-ba38-4962-bf12-fb9911dc30c6">
+      <database-info product="MySQL" version="8.0.33-25" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)" dbms="MYSQL" exact-version="8.0.33" exact-driver-version="8.0">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
-      <user-name>ci31289</user-name>
-      <schema-mapping />
+      <user-name>cz21951_wegame</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
     </data-source>
   </component>
 </project>
